@@ -1,0 +1,1 @@
+First repository ever made (yey) for my first Rails app
