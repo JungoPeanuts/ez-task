@@ -23,13 +23,13 @@ $navbar-inverse-bg: #153554;
   text-align: center;
 }
 
-.jumbotron {
+.jumbotron-home {
   background-image: asset-url('jumbotron_background.jpg');
   background-size: cover;
   height: 400px;
 }
 
-.jumbotron h1 {
+.jumbotron-home h1 {
   color: #fff;
   text-align: left;
   margin-bottom: 30px;
