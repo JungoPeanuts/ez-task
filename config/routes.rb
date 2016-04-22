@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'explore', to: 'pages#explore'
   get 'home', to: 'pages#home'
-  get 'profile', to: 'pages#profile'
+  get '/user/:id', to: 'pages#profile'
 
   
   resources :articles
