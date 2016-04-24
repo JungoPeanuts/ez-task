@@ -1,4 +1,89 @@
-<div class = "center jumbotron-home">
+<% if !user_signed_in? %>
+
+ <style>
+  body {
+    background: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("/06-large.jpg") no-repeat center center fixed
+  ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  }
+  
+  .footer-links{
+    text-align: center;
+    color: white;
+    margin-top: 50%;
+    font-size: 75%;
+    
+  }
+  
+
+  .home-text{
+    margin-top: 30%;
+    float: right;
+    width: 300px;
+    height: 250px;
+  }
+    
+  .btn-toolbar {
+    float: right;
+  
+}
+  
+  
+</style>
+
+<div class = "container-index row">
+  <div class = "col-sm-6 col-sm-offset-6">
+        <div class = "home-text">
+          <h1> Welcome to EZTask</h1>
+          <p class="text">
+          Your everday planner! <br>
+          Connect with friends,
+          and send instant messages. <br>
+          Write your own blog posts
+          or prioritize your life with the use of a calendar.<br>
+          The choice is yours
+</p>
+        </div>
+</div>
+
+<div class = "col-sm-6 col-sm-offset-6">
+      <div class = "btn-toolbar">
+  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-danger btn-large btn-xlarge" %>
+      
+  <%= link_to "Sign in", new_user_session_path, class: "btn btn-danger btn-large btn-xlarge" %>
+      </div>
+</div>
+
+
+<div class = "col-sm-12">
+ <p class = "footer-links"> About             © 2016 EasyTask</p>
+
+</div>
+
+
+</div>
+
+<% else %>
+
+<script>document.location = "/home"</script>
+
+<% end %>
+
+
+
+<!-- <div class = "center jumbotron-home">
   <h1> EASY TASK </h1>
 
 
@@ -6,5 +91,5 @@
 <div class = "col-xs-3 col-xs-offset-2"></div>
 <%= link_to "Sign in", new_user_session_path, class: "btn btn-danger btn-large btn-xlarge" %>
     </div>
-</div>
+</div> -->
 

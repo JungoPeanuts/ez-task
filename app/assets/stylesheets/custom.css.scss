@@ -1,9 +1,30 @@
-$navbar-inverse-bg: #153554;
+$navbar-inverse-bg: #fff;
 
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-color: rgba(212, 216, 212, 0.3);
+}
+
+.container-index {
+  margin-right: 15%;
+  margin-left: 15%;
+  font-weight: bold;
+ 
+}
+
+.text {
+   color: white;
+   font-weight: 300;
+   font-size: 150%;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+}
 
 #logo {
   font-size: 1.7em;
@@ -23,10 +44,14 @@ $navbar-inverse-bg: #153554;
   text-align: center;
 }
 
+
+
 .jumbotron-home {
-  background-image: asset-url('jumbotron_background.jpg');
-  background-size: cover;
-  height: 400px;
+position: relative;
+background: url("/06-large.jpg") no-repeat center center;
+width:100%;
+height: 100%;
+background-size: 100% 100%;
 }
 
 .jumbotron-home h1 {
@@ -35,6 +60,10 @@ $navbar-inverse-bg: #153554;
   margin-bottom: 30px;
   letter-spacing: -1px;
   font-weight: bold;
+}
+
+.post-panel{
+  margin-top: -21px;
 }
 
 .btn-xlarge{
@@ -102,4 +131,34 @@ padding-bottom: 15px;
 .footer ul li{
   float: left;
   margin-left: 15px;
+}
+
+.post-content{
+  text-align: left;
+  margin-left: 15px;
+}
+
+.post-links {
+  
+}
+
+.post-title {
+float : left;
+  margin-left: 25px;
+}
+
+.post-owner{
+  color:black;
+  font-weight: bold;
+}
+
+
+.post-creation {
+  opacity: 0.7;
+}
+
+.glyph {
+  text-align: left;
+  opacity: 0.3;
+  font-size: 80%;
 }

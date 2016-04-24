@@ -1,10 +1,7 @@
-<div class = "container">
-  <div class = footer>
-    <small>
-      Copyright &copy; Matei David, Ruby trainee </small>
-    <nav>
-      <ul>
-        <li><%= link_to "About" %> </li>
-      </ul> </nav>
-  </div>
-  </div
+<% if !user_signed_in? %>
+  
+  <% else %>
+ 
+  <%= render 'layouts/footer_user' %>
+  
+  <% end %>
