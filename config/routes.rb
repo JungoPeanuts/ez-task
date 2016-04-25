@@ -6,6 +6,14 @@ Rails.application.routes.draw do
     end
   end
   
+  resources :todo_lists do
+    resources :todo_items do
+    	member do
+    		patch :complete
+    	end
+    end
+  end
+  
   resources :relationships, only: [:create, :destroy]
   resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
