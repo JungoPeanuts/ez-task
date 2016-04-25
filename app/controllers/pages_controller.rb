@@ -4,9 +4,16 @@ class PagesController < ApplicationController
   end
 
   def home
-  @posts = Post.all
-  @newPost = Post.new
+    following = Array.new
+    for @f in current_user.following do
+      following.push(@f.id)
+    end
+
+    @posts = Post.where("user_id IN (?)", following)
+    @newPost = Post.new
   end
+  
+  
   def profile
   
     if (User.find_by_username(params[:id]))
