@@ -1,13 +1,24 @@
+ <div class="panel panel-default post-form-panel">
+            <div class="panel-body row">
+                
+               <div class = "col-sm-1">
+                  <img src = "/icon.png" class = "rounded-img" height = "25px" width = "25px" float = "left"></img>
+                </div>
+                
+                <div class = "col-sm-11">
+                       <%= form_for(@newPost) do |f| %>
+                      <center>
+                        <div class="field" style = "margin-left: 10px;">
+                          <%= f.text_field :content, autofocus: true, class: "form-control" %>
+                         <span style = "float: right; margin-top: 3px;"><%= f.submit "Post message", class: "btn btn-primary" %> </span>
+                                </div> </center>
+
+                              <% end %>
 
 
-<%= form_for(@newPost) do |f| %>
-<center>
-  <div class="field">
-    <%= f.text_field :content, autofocus: true %>
-  </div> </center>
-
-  <center><div class="actions">
-    <%= f.submit "Add post" %>
-  </div> </center>
-<% end %>
+                </div>
+                
+  
+        </div>
+    </div>
 

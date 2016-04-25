@@ -1,8 +1,8 @@
 class ArticlesController < ApplicationController
   before_action  :set_article, only:[:edit, :update, :show, :destroy]
-  def index
+    def index
    @list = Article.all
-   end
+    end
 
   def new
     @article = Article.new
