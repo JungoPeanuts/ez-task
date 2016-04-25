@@ -1,0 +1,5 @@
+<%= form_for([@todo_list, @todo_list.todo_items.build]) do |f| %>
+	<%= f.text_field :content, rows: 1, class: "form-group", placeholder: "New to do item" %>
+	<br>
+	<%= f.submit class: "btn btn-primary btn-todo" %>
+<% end %>
