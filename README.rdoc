@@ -1,1 +1,21 @@
-First repository ever made (yey) for my first Rails app
+ EZ-TASK (Easy task) este o mini-clona a Tweeter-ului, combinat cu elemente de blogging si in final un checklist pentru a sustine
+ tematica concursului. Ideea din spatele EZT / EZ TASK-ului a fost de a realiza un site care reuseste sa introduca toate aspectele
+ necesare unui site de task management, comunicare, comunicare, si mai multa comunicare, si in final un to-do list :).
+ 
+ Ca si changelog avem in vedere sa implementam avatarele cat mai curand, insa din pricina timpului si a resurselor nu am reusit sa le introducem,
+ cu toate acestea EZTASK este un site care reuseste sa conecteze utilizatorii si sa realizeze exact ceea ce a propus tema, task management si socializare,
+ fara a se folosi de API-uri de la giganti precum Facebook, 4thsquare sau Google. Totul este scris de noi, de la 0.
+ 
+ 
+ Un exemplu live al site-ului cu penultimul commit se poate gasi mai jos:
+ 
+ http://ezt-ask.herokuapp.com/home
+ 
+ 
+ Echipa JungoPeanuts
+ David Matei
+ Pavel Cristian
+ Salavastru Stefan
+ Adam Vlad
+ 
+ Website realizat cu Ruby on Rails pentru concursul de informatica si webdesign FiiCode
